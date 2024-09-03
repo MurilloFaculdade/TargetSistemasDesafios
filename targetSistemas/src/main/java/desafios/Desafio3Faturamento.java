@@ -12,7 +12,7 @@ public class Desafio3Faturamento {
         try {
             String jsonContent = readFile("src/faturamento.json");
             JSONObject jsonObject = new JSONObject(jsonContent);
-            JSONArray faturamento = jsonObject.getJSONArray("faturamentos");
+            JSONArray faturamento = jsonObject.getJSONArray("dados");
 
             double faturamentoMin = Double.MAX_VALUE;
             double faturamentoMax = Double.MIN_VALUE;
